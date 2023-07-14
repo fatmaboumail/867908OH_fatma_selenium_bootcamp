@@ -42,6 +42,8 @@ public class BasePage {
     public static ExtentReports extent;
     public static JavascriptExecutor jsDriver;
 
+
+
     public BasePage() {
         dataInit();
         databaseInit();
@@ -78,7 +80,8 @@ public class BasePage {
 
     @Parameters({"driverConfigEnabled", "browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("http://espn.com") String url) {
+    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("http://optimum.com")
+             String url) {
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
             driver.get(url);
@@ -86,6 +89,9 @@ public class BasePage {
             driver.manage().window().maximize();
         }
     }
+
+
+
 
     @Parameters({"driverConfigEnabled"})
     @AfterMethod
@@ -130,7 +136,6 @@ public class BasePage {
 
     // region Selenium API
     public WebElement getVisibleElement(By by) {
-
         WebElement element;
 
         element = driver.findElement(by);
@@ -285,7 +290,7 @@ public class BasePage {
     // endregion
 
     // region Helper Methods
-    private static void driverInit(String browser) {
+    public static void driverInit(String browser) {
         if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
@@ -346,6 +351,8 @@ public class BasePage {
         calendar.setTimeInMillis(millis);
         return calendar.getTime();
     }
+
+
     // endregion
 
 }

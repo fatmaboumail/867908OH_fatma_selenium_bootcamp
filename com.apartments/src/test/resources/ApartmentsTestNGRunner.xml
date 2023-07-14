@@ -9,4 +9,7 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://www.apartments.com"/>
 
+
+
+
 </suite>
