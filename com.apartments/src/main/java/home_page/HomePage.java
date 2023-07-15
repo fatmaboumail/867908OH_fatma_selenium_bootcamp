@@ -20,13 +20,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[.='Sign In']")
     public WebElement signInLink;
 
-    @FindBy(xpath = "//i[@class='storyicon down2StoryIcon']")
-    public WebElement nameDropDown;
 
-    @FindBy(xpath = "//a[@id='headerSignOut']")
-    public WebElement signOutLink;
-    @FindBy(xpath = "//a[@id='headerMyAccount']")
-    public WebElement myAccountButton;
 
     public HomePage() {
 
