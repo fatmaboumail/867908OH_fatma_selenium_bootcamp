@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 public class TestAuthentication extends BasePage {
 
-    @Test(priority = 1, groups = {"BAT"}, dataProvider = "loginDataProvider")
+    @Test(priority = 1, dataProvider = "loginDataProvider")
 
     public void testLogin(String email, String password) {
         HomePage homePage = new HomePage();
@@ -37,7 +37,7 @@ public class TestAuthentication extends BasePage {
 
     }
 
-    @Test(priority = 2, groups = {"BAT"})
+    @Test(priority = 2)
     public void testSignIn() {
         HomePage homePage = new HomePage();
         LoginPage loginPage = homePage.clickOnLogInLink();
@@ -49,7 +49,7 @@ public class TestAuthentication extends BasePage {
 
     }
 
-    @Test(priority = 3, groups = {"BAT"})
+    @Test(priority = 3)
     public void testSignInWithInvalidCredentials() {
         HomePage homePage=new HomePage();
         LoginPage loginPage=homePage.clickOnLogInLink();

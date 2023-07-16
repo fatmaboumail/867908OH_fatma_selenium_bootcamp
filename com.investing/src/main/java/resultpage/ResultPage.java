@@ -10,6 +10,6 @@ public class ResultPage extends BasePage {
         PageFactory.initElements(driver,this);
     }
     @FindBy(xpath = "//div[@class='js-section-wrapper searchSection allSection']/div[@class='resultsSum']")
-    public WebElement resultsSum;
+    public WebElement resultsItem;
 }
 

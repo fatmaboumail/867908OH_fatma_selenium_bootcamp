@@ -38,10 +38,5 @@ public class ResultSearch extends BasePage {
         safeClickOnElement(viewResultButton);
     }
 
-    public void doSorting(){
-        selectOptionFromDropDown();
-        clickOnColorDropDown();
-        checkOptionBlackBox();
-        clickOnViewResultButton();
+
     }
-}

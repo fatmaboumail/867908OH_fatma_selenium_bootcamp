@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import searchlocation.SearchLocation;
+
 
 public class HomePage extends BasePage {
 
@@ -85,13 +85,7 @@ public class HomePage extends BasePage {
 
 
 
-    public SearchLocation doSearch(String zipCode){
-        clickOnFindDealer();
-        enterZipCode(zipCode);
-        clickOnFirstOption();
-        clickOnSearchButton();
-        return new SearchLocation();
-    }
+
 
 }
 

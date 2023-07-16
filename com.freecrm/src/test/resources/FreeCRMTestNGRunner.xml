@@ -8,5 +8,16 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://freecrm.com"/>
+    <test name="smoke">
+        <classes>
+            <class name="test_authentication.TestAuthentication"/>
+            <class name="test_homepage.TestHomePage"/>
+            <class name="test_tasks.TestTasks"/>
+            <class name="testsearchcontact.TestSearchContact"/>
+
+
+
+        </classes>
+    </test>
 
 </suite>
