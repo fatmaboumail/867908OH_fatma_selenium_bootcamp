@@ -10,6 +10,15 @@
     <parameter name="url" value="http://mbusa.com"/>
 
     <test name="test">
+
+            <classes>
+                <class name="test_authentication.TestAuthentication"/>
+                <class name="test_homepage.TestHomePage"/>
+
+
+
+            </classes>
+
     </test>
 
 

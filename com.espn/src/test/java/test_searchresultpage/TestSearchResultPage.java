@@ -12,7 +12,7 @@ public class TestSearchResultPage extends BasePage {
         HomePage homePage= new HomePage();
     }
        SearchResultPage searchResultPage=new SearchResultPage();
-       String searchTerm= "Soccer";
+       String searchTerm= "Tennis";
 
 
 

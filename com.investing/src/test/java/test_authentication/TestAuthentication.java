@@ -15,22 +15,8 @@ public class TestAuthentication extends BasePage{
         HomePage homePage=new HomePage();
         Assert.assertTrue(isElementVisible(homePage.getLogo()));
     }
-    @Test(priority = 2)
-    public void testLogin(String email,String password){
-        HomePage homePage = new HomePage();
-        homePage.doSignIn(email, password);
 
 
-        Assert.assertTrue(isElementVisible(homePage.userName));
-    }
-
-    @Test(priority = 3)
-    public void testLogout(String email,String password){
-        HomePage homePage = new HomePage();
-        homePage.doSignIn(email, password);
-        homePage.doSignOut();
-        Assert.assertTrue(isElementVisible(homePage.loginLink));
-    }
 }
 
 

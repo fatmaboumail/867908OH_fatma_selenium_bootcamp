@@ -4,7 +4,7 @@ import base.BasePage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import shopping_page.ShoppingPage;
+
 
 public class DashboardPage extends BasePage {
     public DashboardPage(){
@@ -46,13 +46,7 @@ public class DashboardPage extends BasePage {
         safeClickOnElement(shopPartsLink);
     }
 
-    public ShoppingPage switchToNewTab(){
-        clickOnShoppingLink();
-        clickOnShopPartsLink();
-        switchToTab();
 
-        return new ShoppingPage();
-    }
 
     }
 

@@ -29,12 +29,7 @@ public class SelectedPage extends BasePage {
     }
     public void clickOnPhytonicBlue() {
         safeClickOnElement(phytonicBlueColorButton);
-    }
+    }}
 
-    public void BuildYourOwn (){
-        clickOnBuildYourOwn1();
-        clickOnBuildYourOwn2();
-        clickOnPhytonicBlue();
-    }
-}
+
 

@@ -14,7 +14,7 @@ public class TestDataBase extends BasePage {
 
         Database db = new Database(DATA_PATH, DATA_PATH, DATA_PATH, DATA_PATH);
 
-        String query = "SELECT * FROM ESPN_DATABASE.PLAYER";
+        String query = "SELECT * FROM SPN_DATABASE.PLAYER";
         String result = null;
         try {
             result = (String) db.executeQueryReadOne(query);

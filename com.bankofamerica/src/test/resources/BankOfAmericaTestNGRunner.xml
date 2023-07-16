@@ -8,5 +8,12 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://bankofamerica.com"/>
+    <test name="smoke">
+    <classes>
+        <class name="test_atmlocatorpage.TestAtmLocatorPage"/>
+        <class name="test_authentication.TestAuthentication"/>
+
+    </classes>
+</test>
 
 </suite>

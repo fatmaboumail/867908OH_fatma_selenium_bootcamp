@@ -17,13 +17,13 @@ public class TestResultPage extends BasePage {
         HomePage homePage=new HomePage();
         ResultPage resultPage= homePage.doSearch(searchTerm);
 
-        Assert.assertTrue(isElementVisible(resultPage.resultsSum));
+        Assert.assertTrue(isElementVisible(resultPage.resultsItem));
     }
     @DataProvider(name="testSearchDataProvider")
     public Object [][] testSearchDataProvider()
     {
 
-        String path= System.getProperty("user.dir")+"\\src\\test\\resources\\test_data.xlsx";
+        String path= System.getProperty("user.dir")+"\\src\\test\\resources\\doSearch.xlsx";
         ExcelData ex=new ExcelData(path);
         String data[][]=ex.readStringArrays("test_data");
         return data;

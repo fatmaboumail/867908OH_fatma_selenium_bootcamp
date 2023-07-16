@@ -9,14 +9,9 @@ import serch_resultpage.SearchResultPage;
 import utils.ExcelData;
 
 public class TestSearchResultPage extends BasePage {
-    @Test(priority = 1)
-   public void testDoSearch(String searchTerm, String validationTerm) {
-      HomePage homePage = new HomePage();
-   SearchResultPage searchResultsPage = homePage.doSearch(searchTerm);
-    Assert.assertEquals(searchResultsPage.textSearchTerm.getText(), validationTerm);     }
 
 
-   @Test( priority = 2,dataProvider = "searchDataProvider")
+   @Test( dataProvider = "searchDataProvider")
     public void testDoSearch(String searchTerm) {
         HomePage homepage = new HomePage();
         SearchResultPage searchResultsPage = new SearchResultPage();

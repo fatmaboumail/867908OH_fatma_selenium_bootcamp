@@ -38,18 +38,21 @@ public class SearchPage extends BasePage {
     public void enterSearchTerm(String searchTerm){
         sendKeysToElement(inputSearchBox, searchTerm);
     }
-
-
-
-    public void pressEnterKey(){
+    public void pressEnterKey() {
         try {
-            Robot robot = new Robot();
+            Robot robot=new Robot();
             robot.keyPress(KeyEvent.VK_ENTER);
             robot.keyRelease(KeyEvent.VK_ENTER);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception d){
+            d.printStackTrace();
         }
+
     }
+
+
+
+
+
     public ResultSearch doSearch(String searchTerm){
         enterSearchTerm(searchTerm);
         pressEnterKey();
@@ -77,14 +80,6 @@ public class SearchPage extends BasePage {
         safeClickOnElement(newCustomerButton);
     }
 
-    public void doAddToCart(String zipCode){
-        clickOnProductLink();
-        clickOnContinueButton();
-        enterZipCode(zipCode);
-        clickOnConfirmLocation();
-        clickOnNewCustomer();
 
-
-    }
 }
 

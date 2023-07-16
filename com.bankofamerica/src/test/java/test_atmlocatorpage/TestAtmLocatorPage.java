@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import utils.ExcelData;
 
 public class TestAtmLocatorPage extends BasePage {
-    @Test(priority = 1, groups = {"BAT"}, dataProvider = "searchatmlocatordataprovider")
+    @Test(priority = 1, dataProvider = "searchatmlocatordataprovider")
 
     public void testSearchAtmLocator(String zip) {
 
@@ -34,7 +34,7 @@ public class TestAtmLocatorPage extends BasePage {
 
     }
 
-    @Test(priority = 2, groups = {"BAT"}, dataProvider = "searchinvalidatmlocatordataprovider")
+    @Test(priority = 2, dataProvider = "searchinvalidatmlocatordataprovider")
     public void testInvalidSearchAtmLocator(String zip) {
 
         HomePage homePage = new HomePage();

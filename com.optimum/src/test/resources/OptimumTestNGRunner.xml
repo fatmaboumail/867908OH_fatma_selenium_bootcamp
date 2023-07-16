@@ -11,7 +11,8 @@
 
     <test name="test">
         <classes>
-<!--            <class name=""/>-->
+
+            <class name="test_homepage.TestHomePage"/>
         </classes>
     </test>
 </suite>

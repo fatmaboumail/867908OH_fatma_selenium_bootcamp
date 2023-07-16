@@ -54,7 +54,6 @@ public class HomePage extends BasePage {
 
 
     public void enterSearchTerm(String model, String year) {
-        //switchToFrameByElement(iframeSearchBar);
         safeClickOnElement(searchBar);
         sendKeysToElement(searchBar, model);
         sendKeysToElement(searchBar, year);
