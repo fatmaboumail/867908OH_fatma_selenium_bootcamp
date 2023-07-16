@@ -9,10 +9,7 @@ import searchresultpage.SearchResult;
 public class HomePage extends BasePage {
 
 
-
-
-
-       @FindBy (xpath = "//a[@href='https://magento.softwaretestingboard.com/']")
+    @FindBy (xpath = "//a[@href='https://magento.softwaretestingboard.com/']")
        public WebElement logo;
 
     @FindBy (xpath = "//input[@id='search']")
@@ -41,12 +38,7 @@ public class HomePage extends BasePage {
     public WebElement confirmSubscriptionMessage;
 
 
-    @FindBy(xpath = "//div[@class='panel header']//button[@class='action switch']")
-    public WebElement myNameDropDown;
-    @FindBy(xpath="//li[@class='customer-welcome active']//a[contains(.,'Sign Out')]")
-    public WebElement logOutButton;
-    @FindBy(xpath = "//span[@class='base']")
-    public WebElement messageLogOut;
+
 
 
     public HomePage(){
@@ -95,17 +87,8 @@ public class HomePage extends BasePage {
     }
 
 
-    public void clickOnMyNameDropDown(){
-        safeClickOnElement(myNameDropDown);
-    }
-    public void clickOnLogOutButton(){
-        safeClickOnElement(logOutButton);
-    }
-    public void doLogOut(){
-        clickOnMyNameDropDown();
-        clickOnLogOutButton();
 
-    }
+
     public SearchResult doSearch(String searchTerm) {
         inputSearchTerm(searchTerm);
         clickActionSearchButton();

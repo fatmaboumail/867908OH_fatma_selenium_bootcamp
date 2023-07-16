@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestSubscribe extends BasePage {
-    @Test(priority = 10 , groups = {"BAT"})
+    @Test
     public void testSubscribe(){
         HomePage homepage= new HomePage();
         String email="sarafaty07@gmail.com";
